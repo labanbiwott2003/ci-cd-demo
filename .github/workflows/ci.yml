@@ -16,6 +16,8 @@ jobs:
 
       - name: Install Dependencies
         run: npm install
+        working-directory: .  # Ensure it runs in the correct directory
 
       - name: Run Tests
         run: npm test
+        working-directory: .  # Same as above
